@@ -1,9 +1,6 @@
 <% editing = @event["path"].include?("edit") %>
 <% action = editing ? "/posts/#{post.id}" : "/posts" %>
-<%= form_tag(action) do %>
-<% if editing -%>
-  <input type="hidden" name="_method" value="put" />
-<% end -%>
+<%= form_tag(action, multipart: true) do %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -23,7 +20,7 @@
 
   <div class="field">
     <%= label_tag :photo %>
-    <%= text_field_tag "post[photo]", post.photo %>
+    <%= file_field_tag "post[photo]" %>
   </div>
 
   <div class="actions">
