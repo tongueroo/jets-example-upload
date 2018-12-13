@@ -5,7 +5,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @post.photo %>
+  <%= image_tag(@post.photo) %>
 </p>
 
 <%= link_to 'Edit', "/posts/#{@post.id}/edit" %> |
