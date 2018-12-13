@@ -13,6 +13,8 @@ gem "webpacker", git: "https://github.com/tongueroo/webpacker.git", branch: "jet
 # Include mysql2 gem if you are using ActiveRecord, remove if you are not
 gem "mysql2", "~> 0.5.2"
 
+gem "carrierwave", git: "https://github.com/tongueroo/carrierwave.git"
+gem "fog-aws" # to use s3 as the storage backend
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
