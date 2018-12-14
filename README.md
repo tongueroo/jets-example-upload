@@ -3,7 +3,7 @@
 This project demonstrates how to upload images or any binary file with Jets and Carrierwave.
 
 * Blog post: [Jets Image Upload Carrierwave Tutorial: Binary Support](https://blog.boltops.com/2018/12/13/jets-image-upload-carrierwave-tutorial-binary-support)
-* Live demo:
+* Live Demo of [Upload Images Jets Application](https://upload.demo.rubyonjets.com/)
 
 ## Getting Started
 
