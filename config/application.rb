@@ -1,5 +1,5 @@
 Jets.application.configure do
-  config.project_name = "demo"
+  config.project_name = "upload"
   config.mode = "html"
 
   # config.prewarm.enable = true # default is true
