@@ -3,6 +3,7 @@ class CleanerJob < ApplicationJob
 
   # Deletes all the current DB records and reseed the db
   rate "1 day"
+  iam_policy "s3"
   def clean
     empty_s3_bucket
     reset_records
