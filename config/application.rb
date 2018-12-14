@@ -46,11 +46,9 @@ Jets.application.configure do
   # config.api.endpoint_type = 'PRIVATE' # Default is 'EDGE' https://amzn.to/2r0Iu2L
   # config.api.authorization_type = "AWS_IAM" # default is 'NONE' https://amzn.to/2qZ7zLh
 
-
-  # config.domain.hosted_zone_name = "example.com"
-  # us-west-2 REGIONAL endpoint
-  # config.domain.cert_arn = "arn:aws:acm:us-west-2:112233445566:certificate/8d8919ce-a710-4050-976b-b33da991e123"
-  # us-east-1 EDGE endpoint
-  # config.domain.cert_arn = "arn:aws:acm:us-east-1:112233445566:certificate/d68472ba-04f8-45ba-b9db-14f839d57123"
-  # config.domain.endpoint_type = "EDGE"
+  if ENV['CERT_ARN']
+    config.domain.name = "upload.demo.rubyonjets.com"
+    config.domain.hosted_zone_name = "demo.rubyonjets.com"
+    config.domain.cert_arn = ENV['CERT_ARN']
+  end
 end
