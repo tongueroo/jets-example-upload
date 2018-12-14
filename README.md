@@ -14,7 +14,7 @@ This project demonstrates how to upload images or any binary file with Jets and 
 
 ## Important
 
-Remember to update your `.env` files with the `CARRIERWAVE_*` variables. Example:
+Remember to update your [.env](http://rubyonjets.com/docs/env-files/) files with the `CARRIERWAVE_*` variables. Example:
 
 .env.development:
 
