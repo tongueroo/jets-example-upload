@@ -2,7 +2,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV["DB_POOL"] || 5  %>
-  database: <%= ENV['DB_NAME'] || 'demo_development' %>
+  database: <%= ENV['DB_NAME'] || 'upload_development' %>
   username: <%= ENV['DB_USER'] || 'root' %>
   password: <%= ENV['DB_PASS'] %>
   host: <%= ENV["DB_HOST"] %>
@@ -10,13 +10,13 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['DB_NAME'] || 'demo_development' %>
+  database: <%= ENV['DB_NAME'] || 'upload_development' %>
 
 test:
   <<: *default
-  database: demo_test
+  database: upload_test
 
 production:
   <<: *default
-  database: demo_production
+  database: upload_production
   url: <%= ENV['DATABASE_URL'] %>
