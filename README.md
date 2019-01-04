@@ -2,9 +2,6 @@
 
 This project demonstrates how to upload images or any binary file with Jets and Carrierwave.
 
-* Blog post: [Jets Image Upload Carrierwave Tutorial: Binary Support](https://blog.boltops.com/2018/12/13/jets-image-upload-carrierwave-tutorial-binary-support)
-* Live Demo of [Upload Images Jets Application](https://upload.demo.rubyonjets.com/)
-
 ## Getting Started
 
     git clone https://github.com/tongueroo/jets-example-upload upload
@@ -28,3 +25,10 @@ You'll need to update `.env.development.remote` before deploying also.
 .env.development.remote:
 
     DATABASE_URL=mysql2://user:pass@host.us-west-2.rds.amazonaws.com/upload?pool=5
+
+## Resources
+
+* Blog post: [Jets Image Upload Carrierwave Tutorial: Binary Support](https://blog.boltops.com/2018/12/13/jets-image-upload-carrierwave-tutorial-binary-support)
+* Live Demo of [Upload Images Jets Application](https://upload.demo.rubyonjets.com/)
+
+If you find Jets interesting, please it a GitHub star <a href="https://github.com/tongueroo/jets">tongueroo/jets</a>. It helps others find out about the project.  I'd appreciate it!
