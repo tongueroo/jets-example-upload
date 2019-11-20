@@ -1,5 +1,7 @@
 # Jets Upload Tutorial with Carrierwave Example
 
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
+
 This project demonstrates how to upload images or any binary file with Jets and Carrierwave.
 
 ## Getting Started
